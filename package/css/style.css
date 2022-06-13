@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --highlight: #557aff;
+  --textDark: #2b2a39;
+  --textNormal: #fff;
+  --textSecondary: #c8c8c8;
+  --borderLG: 20px;
+  --borderMD: 10px;
+  --borderSM: 5px;
+  --xxl: 2.8rem;
+  --xl: 2.2rem;
+  --lg: 1.85rem;
+  --md: 1.5rem;
+  --sm: 1.25rem;
+}
+.active {
+  font-weight: 700;
+  color: var(--highlight);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  height: 2000px;
+}
+.header {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(/package/img/bg/BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headerText h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: var(--xl);
+  max-width: 80%;
+  margin: 0 auto;
+}
+.search {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search input {
+  display: block;
+  margin: 0 auto;
+
+  padding: 0 20px;
+  width: 80%;
+  height: 60px;
+  border-radius: var(--borderLG);
+  border: 2px solid var(--textDark);
+  background: transparent;
+}
+.search .filter {
+  width: 75px;
+  height: 60px;
+  background-color: var(--textDark);
+  border-radius: var(--sm);
+}
+.search .filter i {
+  color: var(--textNormal);
+}
+.currency ul {
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.currency ul li {
+  list-style: none;
+}
+.currency ul li a {
+  color: var(--textDark);
+  font-size: var(--sm);
+  text-decoration: none;
+  padding: 10px 15px;
+  opacity: 0.4;
+}
+.currency ul li :hover {
+  opacity: 1;
+}
+.filterNav {
+  width: 200px;
+  height: 300px;
+  background-color: var(--textNormal);
+  border-radius: var(--sm);
+  overflow-y: scroll;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  right: 20%;
+  margin-top: -50px;
+  z-index: -100;
+  display: none;
+}
+.filterNav.show {
+  display: flex;
+  z-index: 100;
+}
+.project {
+  padding: 0 50px;
+  margin-top: 100px;
+}
+
+.project h2 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  margin-left: 15px;
+  font-size: var(--lg);
+}
+
+.carousel .carousel-cell {
+  margin-right: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+.carousel .carousel-cell img {
+  object-fit: cover;
+  width: 450px;
+  height: 500px;
+  border-radius: var(--borderLG);
+}
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}

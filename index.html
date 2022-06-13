@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./package/css/style.css" />
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <title>Msea</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav></nav>
+    <!-- Navbar End -->
+    <!-- Header  -->
+    <section class="header">
+      <div class="container">
+        <div class="headerText">
+          <h1>Find <span class="active"> Your </span>Taste, Style, And Sell Amazing NFTs</h1>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search items, collections or user " />
+          <div class="filter"></div>
+        </div>
+        <div class="currency">
+          <ul>
+            <li><a href="">Bitcoin</a></li>
+            <li><a href="">Ethereum</a></li>
+            <li><a href="">Flow</a></li>
+            <li><a href="">Polygon</a></li>
+          </ul>
+        </div>
+        <div class="filterNav"></div>
+      </div>
+    </section>
+    <!-- Header End -->
+    <!-- Project -->
+    <section>
+      <div class="container project">
+        <h2>Find Project that <span class="active"> you'll love</span></h2>
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+          <div class="carousel-cell"><img src="./package/img/project/project-1.gif" alt="" /></div>
+          <div class="carousel-cell"><img src="./package/img/project/project-2.png" alt="" /></div>
+          <div class="carousel-cell"><img src="./package/img/project/project-3.jpg" alt="" /></div>
+          <div class="carousel-cell"><img src="./package/img/project/project-4.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <!-- Project End -->
+    <script src="./package/js/script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+      var elem = document.querySelector(".main-carousel");
+      var flkty = new Flickity(elem, {
+        // options
+        cellAlign: "left",
+        contain: true,
+      });
+
+      // element argument can be a selector string
+      //   for an individual element
+      var flkty = new Flickity(".main-carousel", {
+        // options
+      });
+    </script>
+  </body>
+</html>
