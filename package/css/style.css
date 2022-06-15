@@ -66,11 +66,15 @@ body {
 .search .filter {
   width: 75px;
   height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--textDark);
   border-radius: var(--sm);
 }
 .search .filter i {
   color: var(--textNormal);
+  font-size: var(--md);
 }
 .currency ul {
   margin: 0 auto;
